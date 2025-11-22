@@ -184,17 +184,35 @@
   }
 }
 @layer utilities {
+  .m-auto {
+    margin: auto;
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
   .mt-30 {
     margin-top: calc(var(--spacing) * 30);
   }
   .mt-50 {
     margin-top: calc(var(--spacing) * 50);
+  }
+  .mt-100 {
+    margin-top: calc(var(--spacing) * 100);
+  }
+  .mt-200 {
+    margin-top: calc(var(--spacing) * 200);
+  }
+  .mt-230 {
+    margin-top: calc(var(--spacing) * 230);
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
@@ -277,6 +295,12 @@
   .w-120 {
     width: calc(var(--spacing) * 120);
   }
+  .w-\[90\%\] {
+    width: 90%;
+  }
+  .w-\[90\] {
+    width: 90;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -291,6 +315,9 @@
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -374,6 +401,9 @@
   .bg-\[url\(img3\)\] {
     background-image: url(img3);
   }
+  .bg-center {
+    background-position: center;
+  }
   .bg-right {
     background-position: right;
   }
@@ -425,6 +455,18 @@
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
   }
+  .pl-7 {
+    padding-left: calc(var(--spacing) * 7);
+  }
+  .pl-30 {
+    padding-left: calc(var(--spacing) * 30);
+  }
+  .pl-40 {
+    padding-left: calc(var(--spacing) * 40);
+  }
+  .pl-50 {
+    padding-left: calc(var(--spacing) * 50);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -458,6 +500,9 @@
   .text-white {
     color: var(--color-white);
   }
+  .italic {
+    font-style: italic;
+  }
   .underline {
     text-decoration-line: underline;
   }
@@ -487,6 +532,11 @@
   .active\:bg-gray-500 {
     &:active {
       background-color: var(--color-gray-500);
+    }
+  }
+  .lg\:mt-0 {
+    @media (width >= 768px) {
+      margin-top: calc(var(--spacing) * 0);
     }
   }
   .lg\:flex {
@@ -522,6 +572,11 @@
   .lg\:pl-20 {
     @media (width >= 768px) {
       padding-left: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:pl-40 {
+    @media (width >= 768px) {
+      padding-left: calc(var(--spacing) * 40);
     }
   }
   .lg\:text-5xl {
