@@ -526,8 +526,14 @@
   .pt-15 {
     padding-top: calc(var(--spacing) * 15);
   }
+  .pt-19 {
+    padding-top: calc(var(--spacing) * 19);
+  }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
+  }
+  .pt-21 {
+    padding-top: calc(var(--spacing) * 21);
   }
   .pt-30 {
     padding-top: calc(var(--spacing) * 30);
