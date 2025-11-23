@@ -186,6 +186,9 @@
   }
 }
 @layer utilities {
+  .end-1 {
+    inset-inline-end: calc(var(--spacing) * 1);
+  }
   .m-auto {
     margin: auto;
   }
@@ -194,6 +197,9 @@
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
@@ -219,11 +225,17 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
   .mb-30 {
     margin-bottom: calc(var(--spacing) * 30);
+  }
+  .ml-30 {
+    margin-left: calc(var(--spacing) * 30);
   }
   .flex {
     display: flex;
@@ -282,8 +294,14 @@
   .h-\[70vh\] {
     height: 70vh;
   }
+  .h-\[90vh\] {
+    height: 90vh;
+  }
   .h-\[95vh\] {
     height: 95vh;
+  }
+  .h-\[100\] {
+    height: 100;
   }
   .h-\[130vh\] {
     height: 130vh;
@@ -336,6 +354,12 @@
   .w-120 {
     width: calc(var(--spacing) * 120);
   }
+  .w-\[50\%\] {
+    width: 50%;
+  }
+  .w-\[50\] {
+    width: 50;
+  }
   .w-\[90\%\] {
     width: 90%;
   }
@@ -372,6 +396,9 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -396,6 +423,9 @@
   }
   .bg-\[\#ebebeb7c\] {
     background-color: #ebebeb7c;
+  }
+  .bg-\[u\] {
+    background-color: u;
   }
   .bg-\[url\] {
     background-color: url;
@@ -441,6 +471,12 @@
   }
   .bg-\[url\(\.\/img5\.png\)\] {
     background-image: url(./img5.png);
+  }
+  .bg-\[url\(\.\/img6\)\] {
+    background-image: url(./img6);
+  }
+  .bg-\[url\(\.\/img6\.pnh\)\] {
+    background-image: url(./img6.pnh);
   }
   .bg-center {
     background-position: center;
@@ -504,6 +540,9 @@
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
@@ -648,6 +687,11 @@
   .lg\:pl-20 {
     @media (width >= 768px) {
       padding-left: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:pl-30 {
+    @media (width >= 768px) {
+      padding-left: calc(var(--spacing) * 30);
     }
   }
   .lg\:pl-40 {
