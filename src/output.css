@@ -395,6 +395,12 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+  }
+  .gap-30 {
+    gap: calc(var(--spacing) * 30);
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -439,6 +445,9 @@
   .bg-blue-100 {
     background-color: var(--color-blue-100);
   }
+  .bg-blue-950 {
+    background-color: var(--color-blue-950);
+  }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
   }
@@ -459,6 +468,9 @@
   }
   .bg-\[url\(\)\] {
     background-image: url();
+  }
+  .bg-\[url\(\.\/\.png\)\] {
+    background-image: url(./.png);
   }
   .bg-\[url\(\.\/img1\.png\)\] {
     background-image: url(./img1.png);
@@ -547,8 +559,23 @@
   .pt-110 {
     padding-top: calc(var(--spacing) * 110);
   }
+  .pr-3 {
+    padding-right: calc(var(--spacing) * 3);
+  }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
+  }
+  .pr-30 {
+    padding-right: calc(var(--spacing) * 30);
+  }
+  .pr-\[-10\] {
+    padding-right: -10;
+  }
+  .pr-\[-30px\] {
+    padding-right: -30px;
+  }
+  .pr-\[-50px\] {
+    padding-right: -50px;
   }
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
@@ -622,6 +649,9 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .text-blue-500 {
+    color: var(--color-blue-500);
   }
   .text-blue-950 {
     color: var(--color-blue-950);
@@ -747,9 +777,19 @@
       gap: calc(var(--spacing) * 47);
     }
   }
+  .lg\:pt-0 {
+    @media (width >= 768px) {
+      padding-top: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:pt-5 {
     @media (width >= 768px) {
       padding-top: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:pt-20 {
+    @media (width >= 768px) {
+      padding-top: calc(var(--spacing) * 20);
     }
   }
   .lg\:pt-30 {
@@ -765,6 +805,16 @@
   .lg\:pr-20 {
     @media (width >= 768px) {
       padding-right: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:pb-0 {
+    @media (width >= 768px) {
+      padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:pl-0 {
+    @media (width >= 768px) {
+      padding-left: calc(var(--spacing) * 0);
     }
   }
   .lg\:pl-20 {
@@ -785,6 +835,11 @@
   .lg\:pl-180 {
     @media (width >= 768px) {
       padding-left: calc(var(--spacing) * 180);
+    }
+  }
+  .lg\:text-start {
+    @media (width >= 768px) {
+      text-align: start;
     }
   }
   .lg\:text-4xl {
