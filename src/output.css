@@ -366,6 +366,9 @@
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
@@ -414,6 +417,9 @@
   }
   .bg-transparent {
     background-color: transparent;
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-\[url\(\)\] {
     background-image: url();
@@ -477,6 +483,18 @@
   }
   .pt-50 {
     padding-top: calc(var(--spacing) * 50);
+  }
+  .pt-60 {
+    padding-top: calc(var(--spacing) * 60);
+  }
+  .pt-80 {
+    padding-top: calc(var(--spacing) * 80);
+  }
+  .pt-110 {
+    padding-top: calc(var(--spacing) * 110);
+  }
+  .pt-120 {
+    padding-top: calc(var(--spacing) * 120);
   }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
@@ -617,6 +635,11 @@
       padding-top: calc(var(--spacing) * 5);
     }
   }
+  .lg\:pt-30 {
+    @media (width >= 768px) {
+      padding-top: calc(var(--spacing) * 30);
+    }
+  }
   .lg\:pr-20 {
     @media (width >= 768px) {
       padding-right: calc(var(--spacing) * 20);
@@ -647,6 +670,12 @@
     @media (width >= 768px) {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .lg\:text-6xl {
+    @media (width >= 768px) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
   .lg\:text-7xl {
